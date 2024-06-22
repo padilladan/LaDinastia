@@ -1,0 +1,108 @@
+body {
+    background-color: #222529;
+}
+
+.main-container {
+    padding-top: 2%;
+    background-color: rgba(78, 90, 99, 0.47);
+}
+
+.main-navbar {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #203731;
+    padding: 2em;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main-navbar::before {
+    content: "";
+    background: url('../images/lambeau2.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.nw {
+    color: #f8f9fa!important;
+    text-align: center!important;
+}
+
+.n-ts {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-link {
+    color: #b0b0b0!important;
+    font-weight: 300;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-toggler {
+    border: none;
+    background: none;
+}
+
+.navbar-toggler-icon {
+    color: #333;
+}
+
+.header-css {
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 0 !important;
+}
+
+.general-footer{
+    color: white;
+    text-align: center;
+}
+
+.r-m-c{
+    color: white;
+}
+
+.r-t-p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#r-h1{
+    padding-bottom: 3%;
+}
+
+#n-line{
+    border-top: white 1px solid;
+}
+
+#main-content{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* when active */
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+    color: white !important;
+}
