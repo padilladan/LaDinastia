@@ -1,0 +1,109 @@
+#header-nav-div{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #203731;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+}
+
+#header-nav-div::before{
+    content: "";
+    background: url('../images/lambeau2.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    position: absolute;
+    top: -300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#dl{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #f8f9fa!important;
+    text-align: center!important;
+    margin-bottom: 2%;
+}
+
+#body-div{
+    border-radius: 10px;
+    margin: 2% 5%;
+    padding-top: 2%;
+    background-color: rgba(78, 90, 99, 0.47);
+}
+
+#main-content{
+}
+
+#mainNav{
+    background-color: rgba(30, 30, 30, 0.32);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#mainNav::before{
+}
+
+#name-header{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+#nav-brand{
+    margin-bottom: 0!important;
+    margin-left: 5%;
+}
+
+.navbar .nav-item a {
+    color: #9a9a9a !important; /* Change this to your desired active link color */
+}
+
+.navbar .nav-item.active a {
+    color: #ffffff !important; /* Change this to your desired active link color */
+    font-weight: bold;
+}
+
+.navbar-toggler{
+    margin-right: 44% !important;
+}
+
+#nav-option{
+}
+
+.nav-item{
+    /*margin-left: 20%;*/
+}
+
+
+/* Header CSS */
+#main-header {
+    overflow: hidden;
+}
+
+/* Navbar CSS */
+
+.nw {
+    color: #f8f9fa!important;
+    text-align: center!important;
+}
+
+.n-ts {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Footer specific CSS */
+.general-footer {
+    color: white;
+    text-align: center;
+}
+
+/* Extra shit */
+body {
+    background-color: #222529;
+}

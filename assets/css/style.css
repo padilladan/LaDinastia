@@ -1,12 +1,13 @@
-body {
-    background-color: #222529;
+/* Header CSS */
+.header-css {
+    overflow: hidden;
 }
 
-.main-container {
-    padding-top: 2%;
-    background-color: rgba(78, 90, 99, 0.47);
+h1 {
+    margin-bottom: 0 !important;
 }
 
+/* Navbar CSS */
 .main-navbar {
     position: relative;
     text-align: center;
@@ -66,12 +67,20 @@ body {
     color: #333;
 }
 
-.header-css {
-    overflow: hidden;
+/* when active */
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold;
+    color: white !important;
 }
 
-h1 {
-    margin-bottom: 0 !important;
+/* Other CSS */
+body {
+    background-color: #222529;
+}
+
+.main-container {
+    padding-top: 2%;
+    background-color: rgba(78, 90, 99, 0.47);
 }
 
 .general-footer{
@@ -99,10 +108,4 @@ h1 {
 #main-content{
     padding-left: 0 !important;
     padding-right: 0 !important;
-}
-
-/* when active */
-.navbar-nav .nav-item.active .nav-link {
-    font-weight: bold;
-    color: white !important;
 }
