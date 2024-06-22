@@ -4,6 +4,7 @@ body {
 
 .main-container {
     padding-top: 2%;
+    background-color: rgba(78, 90, 99, 0.47);
 }
 
 .main-navbar {
@@ -71,6 +72,33 @@ body {
 
 h1 {
     margin-bottom: 0 !important;
+}
+
+.general-footer{
+    color: white;
+    text-align: center;
+}
+
+.r-m-c{
+    color: white;
+}
+
+.r-t-p{
+    text-align: center;
+    font-weight: bold;
+}
+
+#r-h1{
+    padding-bottom: 3%;
+}
+
+#n-line{
+    border-top: white 1px solid;
+}
+
+#main-content{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 /* when active */

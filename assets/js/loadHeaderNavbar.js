@@ -34,8 +34,10 @@ function highlightActiveMenuItem() {
 }
 
 function loadPageContent(page) {
+    console.log(`Attempting to load content for: ${page}`);
     loadHTML('main-content', page, () => {
         highlightActiveMenuItem();
+        console.log(`Successfully loaded content for: ${page}`);
     });
     history.pushState(null, null, page); // Update the URL without reloading the page
 }
@@ -52,6 +54,29 @@ function setupNavLinks() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');
+
+    // Ensure the main content element exists
+    const mainContentElement = document.getElementById('main-content');
+    if (!mainContentElement) {
+        console.error('Main content element not found');
+        return;
+    }
+
+    // Ensure the navbar placeholder exists
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
+    if (!navbarPlaceholder) {
+        console.error('Navbar placeholder element not found');
+        return;
+    }
+
+    // Ensure the footer placeholder exists
+    const footerPlaceholder = document.getElementById('footer-placeholder');
+    if (!footerPlaceholder) {
+        console.error('Footer placeholder element not found');
+        return;
+    }
+
     loadHTML('navbar-placeholder', 'navbar.html', () => {
         setupNavLinks();
 
@@ -59,10 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const initialPage = window.location.pathname.split("/").pop() || 'index.html';
         loadPageContent(initialPage);
     });
+
+    // Load the footer
+    loadHTML('footer-placeholder', 'footer.html');
 });
 
 window.addEventListener('popstate', () => {
     // Handle the browser back/forward buttons
     const page = window.location.pathname.split("/").pop();
     loadPageContent(page);
+});
+
+// Add this to force a reload and clear cache when the page is refreshed
+window.addEventListener('beforeunload', () => {
+    // Clear the cache and reload the page
+    window.location.reload(true);
 });
